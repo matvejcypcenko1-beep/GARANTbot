@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-garant-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: 7980889794:AAFwFN07AYjgtBLmlRdTt4QDHZwt4lZ5pP0
+        sync: false
+      - key: chlen
+        sync: false
